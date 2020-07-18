@@ -1,0 +1,13 @@
+
+  <% @artists.each do |p| %>
+  <%= p.name %>     
+ <p> <%= "#{p.songs.count}"%> song </p>
+  <%= p.songs.each do |song| %>     
+  <ul> 
+  <li> 
+  <%=song.title%>
+  </li>
+  </ul>
+  <%end%>
+  <% end %>
+
